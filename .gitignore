@@ -1,5 +1,4 @@
 # Exclude prompt and checkpoints
-Hackman_Copilot_Prompt.md
 checkpoints/
 
 # Python
