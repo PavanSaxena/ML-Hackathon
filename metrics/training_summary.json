@@ -1,0 +1,38 @@
+{
+  "training": {
+    "total_episodes": 50000,
+    "final_win_rate": 91.6,
+    "final_avg_reward": 79.555,
+    "final_avg_wrong": 1.912,
+    "final_avg_repeated": 0.0,
+    "final_avg_length": 9.17,
+    "final_q_table_size": 259924,
+    "final_epsilon": 0.05
+  },
+  "validation": {
+    "num_tests": 10,
+    "validation_set_size": 200,
+    "best_win_rate": 95.5,
+    "best_episode": 45000,
+    "final_win_rate": 93.5,
+    "final_avg_wrong": 1.79,
+    "final_avg_repeated": 0.0
+  },
+  "hyperparameters": {
+    "alpha": 0.1,
+    "gamma": 0.95,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.05,
+    "epsilon_decay": 0.995,
+    "hmm_weight": 0.3,
+    "max_lives": 6
+  },
+  "curriculum": {
+    "phase1_episodes": "0-20k",
+    "phase1_word_length": "\u22646",
+    "phase2_episodes": "20k-50k",
+    "phase2_word_length": "\u226410",
+    "phase3_episodes": "50k+",
+    "phase3_word_length": "all"
+  }
+}
